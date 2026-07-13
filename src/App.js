@@ -3,6 +3,7 @@ import './App.css';
 import Header from './Header';
 import Display from './Display';
 import Aboutus from './Aboutus';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Header/>
       <Display/>
       <Aboutus/>
+      <Footer/>
       
       
       </section> 
