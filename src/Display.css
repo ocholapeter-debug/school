@@ -1,0 +1,115 @@
+/* Outer wrapper for the carousel. */
+.display {
+  position: relative;
+  width: 140%;
+  max-width: 1000px;
+  margin: 2rem auto;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  background: #000;
+}
+
+/* Slide container holds all slides in the same stacking context. */
+.display-slides {
+  position: relative;
+  width: 140%;
+  height: 420px;
+}
+
+/* Each slide is absolutely positioned so it can move horizontally. */
+.display-slide {
+  position: absolute;
+  inset: 0;
+  transition: transform 0.8s ease-in-out;
+}
+
+/* Slide image fills the slide area and preserves aspect ratio. */
+.display-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Caption overlay placed at the bottom-left of the active slide. */
+.display-caption {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+.display-caption h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1.1rem;
+}
+
+.display-caption p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Navigation arrows on either side of the carousel. */
+.display-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.1rem;
+  z-index: 2;
+}
+
+.display-arrow:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.display-arrow.prev {
+  left: 1rem;
+}
+
+.display-arrow.next {
+  right: 1rem;
+}
+
+/* Dots row at the bottom of the carousel for slide navigation. */
+.display-dots {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+  z-index: 2;
+}
+
+.display-dot {
+  width: 12px;
+  height: 12px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+.display-dot.active {
+  background: #fff;
+  transform: scale(1.1);
+}
+
+/* Message shown when there are no slides to display. */
+.carousel-empty {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}
