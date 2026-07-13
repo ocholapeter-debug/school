@@ -1,0 +1,65 @@
+/* Parent container holds left text and right image in two columns. */
+.aboutus-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Text column on the left. */
+.aboutus-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.aboutus-text .title {
+  margin-bottom: 0.75rem;
+  font-size: 2rem;
+  color: #1d3b5f;
+}
+
+.aboutus-text .sub-title {
+  margin-bottom: 1.25rem;
+  font-size: 1.1rem;
+  color: #475569;
+}
+
+.aboutus-text p {
+  line-height: 1.7;
+  color: #334155;
+  margin-bottom: 1rem;
+}
+
+/* Image column on the right. */
+.aboutus-image {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutus-image img {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 18px;
+  object-fit: cover;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.18);
+}
+
+/* Responsive layout for narrow screens. */
+@media (max-width: 800px) {
+  .aboutus-container {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+
+  .aboutus-image,
+  .aboutus-text {
+    width: 100%;
+  }
+}

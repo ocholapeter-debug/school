@@ -39,8 +39,8 @@ const Display = ({ slides = [], autoPlayInterval = 5000 }) => {
       image: 'https://scontent-mba2-1.xx.fbcdn.net/v/t39.30808-6/465408551_27885241487741080_1374096667004108623_n.jpg?stp=dst-jpg_tt6&cstp=mx640x640&ctp=s640x640&_nc_cat=109&ccb=1-7&_nc_sid=0b6b33&_nc_ohc=YIcLLSLjDkgQ7kNvwHQiGRn&_nc_oc=AdospFjO5eHBkEPJnYVVgjkCuJeEsNaT8e6JfoFFNHM6ZFnEPo6fL5eRX1JQ0lsa-Fk&_nc_zt=23&_nc_ht=scontent-mba2-1.xx&_nc_gid=4qLZk2nlfV8kF8a79Jx80Q&_nc_ss=7b2a8&oh=00_AQDrHB1J88eUhBx3DdGAQP6gYR0nlLqjRy0YS1-SYUqBnQ&oe=6A5AD7D1',
       
       caption: {
-        title: 'mission',
-        description: 'school mission',
+        title: 'sport',
+        description: 'sport teams',
       },
     },
      {
