@@ -2,6 +2,17 @@ import React from 'react'
 import './Aboutus.css';
 
 function Aboutus() {
+ 
+
+  const stats = [
+    { number: '5+', label: 'Years of Excellence' },
+    { number: '2k+', label: 'Students Trained' },
+    { number: '50+', label: 'Certified Instructors' },
+    { number: '98%', label: 'Success Rate' }
+  ];
+
+
+
   return (
     <section className='aboutus-container'>
       <section className='aboutus-text'>
@@ -23,8 +34,26 @@ function Aboutus() {
           alt='School campus'
         />
       </section>
-    </section>
-  )
-}
+
+ <section className='stats-grid'>
+                     {stats.map((stat,idx)=>(
+                        <section key={idx} className='statcard'>
+                           <section className='statnumber'>{stat.number}</section>
+                           <section className='statlabel'>{stat.label}</section>
+                        </section>         
+                     ))}
+              </section>
+              
+                          
+                           
+                        
+                        </section>
+                        
+  )}
+
+
+    
+  
+
 
 export default Aboutus
